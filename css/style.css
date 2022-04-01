@@ -1,4 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blue;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    width: fit-content;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: bisque;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer {
+    background-color: aquamarine;
 }
