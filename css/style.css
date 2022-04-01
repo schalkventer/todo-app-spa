@@ -10,6 +10,7 @@
 
 body {
     background-color: #AFCDCC;
+    color: black;
     margin: 0%; 
     font-size: 1rem;
     font-family: Roboto-Light;
@@ -34,10 +35,11 @@ body {
 
 header {
     background-image: url(../resources/mountain-background.jpg);
-    height: 300px;
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #04ADBF;
     color: white;
+    height: 200px;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -50,6 +52,7 @@ main {
 
 #inbox{
     color: white;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
@@ -64,10 +67,18 @@ main {
     margin-bottom: 10px;
 }
 
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 #add-button {
-    background-color: #5EB5CE;
     border: 1px solid transparent;
-    border-radius: 50px;
+    background-color: #5EB5CE;
+    color: white;
+    border-radius: 50%;
     width: 65px;
     height: 65px;
 }
@@ -75,8 +86,10 @@ main {
 footer {
     background-image: url(../resources/mountain-background.jpg);
     background-repeat: no-repeat;
+    background-position: top;
     background-color: #04ADBF;
     color: white;
+    height: 50px;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-right: 1rem;
