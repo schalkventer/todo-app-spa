@@ -83,6 +83,11 @@ main {
     height: 65px;
 }
 
+#plus-icon {
+    width: 32px;
+    height: 32px;
+}
+
 footer {
     background-image: url(../resources/mountain-background.jpg);
     background-repeat: no-repeat;
