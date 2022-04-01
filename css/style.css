@@ -15,8 +15,7 @@
 } */
 
 body {
-    /* display: flex;
-    flex-direction: column; */
+    background-color: #AFCDCC;
     margin: 0%; 
     font-size: 1rem;
     font-family: Roboto-Light;
@@ -24,9 +23,10 @@ body {
 
 #app {
     margin: 0 auto;
-    max-width: 380px;
+    max-width: 640px;
     width: 100%;
 }
+
 h1 {
     margin: 0%;
 }
@@ -41,12 +41,11 @@ header {
     background-image: url(../resources/mountain-background.jpg);
     height: 300px;
     background-repeat: no-repeat;
-    background-color: aquamarine;
-
+    background-color: #04ADBF;
 }
 
 main {
-    background-color: bisque;
+    background-color: #F2AD85;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -54,5 +53,5 @@ main {
 footer {
     background-image: url(../resources/mountain-background.jpg);
     background-repeat: no-repeat;
-    background-color: aquamarine;
+    background-color: #04ADBF;
 }
