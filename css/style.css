@@ -2,15 +2,31 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../resources/Roboto-Light.ttf');
+    font-display: swap
+}
+
+/* @font-face {
+    font-family: Roboto-Thin;
+    src: url('../resources/Roboto-Thin.ttf');
+    font-display: swap
+} */
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0%;
     width: fit-content;
+    font-family: Roboto-Light;
 }
 
 header {
+    background-image: url(../resources/mountain-background.jpg);
+    background-repeat: no-repeat;
     background-color: aquamarine;
+    height: 426px;
 }
 
 main {
@@ -20,5 +36,7 @@ main {
 }
 
 footer {
+    background-image: url(../resources/mountain-background.jpg);
+    background-repeat: no-repeat;
     background-color: aquamarine;
 }
