@@ -15,18 +15,34 @@
 } */
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0%;
-    width: fit-content;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0%; 
+    font-size: 1rem;
     font-family: Roboto-Light;
+}
+
+#app {
+    margin: 0 auto;
+    max-width: 380px;
+    width: 100%;
+}
+h1 {
+    margin: 0%;
+}
+
+p {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header {
     background-image: url(../resources/mountain-background.jpg);
+    height: 300px;
     background-repeat: no-repeat;
     background-color: aquamarine;
-    height: 426px;
+
 }
 
 main {
