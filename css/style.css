@@ -8,12 +8,6 @@
     font-display: swap
 }
 
-/* @font-face {
-    font-family: Roboto-Thin;
-    src: url('../resources/Roboto-Thin.ttf');
-    font-display: swap
-} */
-
 body {
     background-color: #AFCDCC;
     margin: 0%; 
@@ -28,11 +22,11 @@ body {
     box-shadow: 4px 4px 40px #5EB5CE;
 }
 
-h1 {
+#app h1, h2, h3 {
     margin: 0%;
 }
 
-p {
+#app p {
     margin: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -43,6 +37,9 @@ header {
     height: 300px;
     background-repeat: no-repeat;
     background-color: #04ADBF;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 main {
@@ -51,8 +48,36 @@ main {
     padding-right: 1rem;
 }
 
+#inbox{
+    color: white;
+    text-transform: uppercase;
+}
+
+.todo{
+    border-bottom: 1px solid #5EB5CE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#add-button {
+    background-color: #5EB5CE;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+}
+
 footer {
     background-image: url(../resources/mountain-background.jpg);
     background-repeat: no-repeat;
     background-color: #04ADBF;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
