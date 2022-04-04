@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This will be a project to list user input as tasks in a to-do list format">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./resources/tab-icon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This will be a project to list user input as tasks in a to-do list format"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="shortcut icon" href="./resources/tab-icon.png" type="image/x-icon"/>
     <script src="./js/script.js" defer></script>
     <title>Mountain Of Work</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-    <header id="header">
+      <header id="header">
         <h1>Your To Do's</h1>
         <div id="date"></div>
-    </header>
+      </header>
 
-    <main id="main">
+      <main id="main">
         <div id="inbox">
-            <h3>Inbox:</h3>
+          <h3>Inbox:</h3>
         </div>
 
         <div id="main-body">
-            <div class="todo">
-                <div class="icon"></div>
-                <p>Meeting</p>
-                <p>Cape Town CBD</p>
-                <p>10:00</p>
-            </div>
-            <div class="todo">
-                <div class="icon"></div>
-                <p>Meeting</p>
-                <p>Cape Town CBD</p>
-                <p>10:00</p>
-            </div>
-            <div class="todo">
-                <div class="icon"></div>
-                <p>Meeting</p>
-                <p>Cape Town CBD</p>
-                <p>10:00</p>
-            </div>
-            <div class="todo">
-                <div class="icon"></div>
-                <p>Meeting</p>
-                <p>Cape Town CBD</p>
-                <p>10:00</p>
-            </div>
+          <div class="todo">
+            <div class="icon"></div>
+            <p>Meeting</p>
+            <p>Cape Town CBD</p>
+            <p>10:00</p>
+          </div>
+          <div class="todo">
+            <div class="icon"></div>
+            <p>Meeting</p>
+            <p>Cape Town CBD</p>
+            <p>10:00</p>
+          </div>
+          <div class="todo">
+            <div class="icon"></div>
+            <p>Meeting</p>
+            <p>Cape Town CBD</p>
+            <p>10:00</p>
+          </div>
+          <div class="todo">
+            <div class="icon"></div>
+            <p>Meeting</p>
+            <p>Cape Town CBD</p>
+            <p>10:00</p>
+          </div>
         </div>
+
+        <!-- <div id="button">
+          <button id="add-button">
+            <img src="./resources/plus-icon.png" alt="add icon" id="plus-icon"/>
+          </button>
+        </div> -->
 
         <div id="button">
-            <button id="add-button"><img src="./resources/plus-icon.png" alt="add icon" id="plus-icon"></button>
+          <!-- Trigger/Open The Modal -->
+          <button id="add-button" class="myBtn">
+            <img src="./resources/plus-icon.png" alt="add icon" id="plus-icon"/>
+          </button>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Add event:</h2>
+              <form>
+                <input type="text"/>
+                <input type="text"/>
+                <input type="time"/>
+                <input type="text"/>
+              </form>
+            </div>
+          </div>
         </div>
-    </main>
+      </main>
 
-    <footer id="footer">
+      <footer id="footer">
         <h3>Completed</h3>
-    </footer>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
