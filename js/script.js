@@ -26,10 +26,11 @@ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 //   }
 // }
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
+
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "100%";
+//   }
   
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//   }
