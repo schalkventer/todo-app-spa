@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="This will be a project to list user input as tasks in a to-do list format"/>
@@ -49,21 +49,34 @@
           </div>
         </div>
 
-        <div id="button">
+        <!-- <div id="button">
           <button id="add-button">
             <img src="./resources/plus-icon.png" alt="add icon" id="plus-icon"/>
           </button>
+        </div> -->
+
+        <div id="button">
+          <button id="add-button" style="cursor: pointer" onclick="openNav()">
+            <img src="./resources/plus-icon.png" alt="add icon" id="plus-icon"/>
+          </button>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
 
         <!-- <div id="button"> -->
-          <!-- Trigger/Open The Modal -->
-          <!-- <button id="add-button" class="myBtn">
+        <!-- Trigger/Open The Modal -->
+        <!-- <button id="add-button" class="myBtn">
             <img src="./resources/plus-icon.png" alt="add icon" id="plus-icon"/>
           </button> -->
-          <!-- The Modal -->
-          <!-- <div id="myModal" class="modal"> -->
-            <!-- Modal content -->
-            <!-- <div class="modal-content">
+        <!-- The Modal -->
+        <!-- <div id="myModal" class="modal"> -->
+        <!-- Modal content -->
+        <!-- <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Add event:</h2>
               <form>
