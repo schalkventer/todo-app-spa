@@ -1,22 +1,17 @@
-# To-do-App
-This will be a project to list user input as tasks in a to-do list format 
+# To do App
 
 ## Description
 This will be a project to list user input as tasks in a to-do list format 
 
 
 ## MVP
-- Animation on some of my images
-- A background image
-- Make use of the picture element
-- CSS Media Queries
-- Bootstrap:
-    5.1 containers
-    5.2 grid
-    5.3 spacing and margins
-    5.4 typography, i.e. awesome fonts
-    5.5 form and cards
-    5.6 navbar
+- Add tasks to the list
+- Delete tasks from the list
+- Edit tasks
+- Add due dates to tasks
+- Sort tasks alphabetically
+- Strike through tasks on the list
+- Save tasks in their expected states and order even after the browser has been closed
 
 
 ## Backlog
