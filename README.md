@@ -1,16 +1,18 @@
 # To-Do App
 
 ## Description
-This will be a project to list user input as tasks in a to-do list format
+This is an application that can be used to write down tasks and display them in a list.
 
-### How to use
+
+## How to use
 1. To add a task into the list press the blue circle button to open the form tab
 2. Fill out the form and press the add button to add the task to the list
 3. To edit tasks simply press on the task you want to change, from there edit the desired info and press and press the update button.
-4. On the main page many things can be done to your tasks such as:
+4. Other features include:
     - Marking your tasks off as done
-    - Sorting tasks by completed or uncompleted
-    - Deleting tasks
+    - Deleting unwanted tasks
+    - Displaying tasks that are completed or uncompleted
+  
 
 ## MVP
 - Add tasks to the list
