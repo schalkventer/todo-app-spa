@@ -5,10 +5,11 @@ This will be a project to list user input as tasks in a to-do list format
 ### How to use
 1. To add a task into the list press the the blue button to open the the form tab
 2. From there fill out all the form fields and press the Add button to add the new task to the list
-3. On the main page many things can be done to your tasks such as:
-    3.1 Marking your task off as done
-    3.2 Sorting tasks by completed or uncompleted
-    3.3
+3. To edit a task simply press on it edit what you want to  change and press the update button to update the task
+4. On the main page many things can be done to your tasks such as:
+    - Marking your task off as done
+    - Sorting tasks by completed or uncompleted
+    - Deleting tasks
 
 
 ## MVP
