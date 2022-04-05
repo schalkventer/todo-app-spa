@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    background-image: url(../resources/mountain-background.jpg);
+    background-image: url(../images/mountain-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #04ADBF;
@@ -89,7 +89,7 @@ main {
 }
 
 footer {
-    background-image: url(../resources/mountain-background.jpg);
+    background-image: url(../images/mountain-background.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-color: #04ADBF;
