@@ -1,7 +1,8 @@
 # To-Do App
 
 ## Description
-This will be a project to list user input as tasks in a to-do list format 
+This will be a project to list user input as tasks in a to-do list format
+### How to use 
 
 
 ## MVP
