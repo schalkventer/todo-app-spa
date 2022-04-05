@@ -15,12 +15,9 @@ This will be a project to list user input as tasks in a to-do list format
 
 
 ## Backlog
-- Add jumbotron (no longer possible)
-- Add navbar (completed)
-- Add grid (completed)
-- Add cards (complete)
-- Add form (complete)
-- Add modal (complete)
-- Add carousel (complete)
-- Add media queries (completed)
-- Add awesome fonts typography (completed)
+- Edit tasks
+- Sort tasks alphabetically
+- Save tasks in their expected states and order even after the browser has been closed
+- Add local storage
+- Add type icons
+- Add tasks completed counter
