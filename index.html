@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="This will be a project to list user input as tasks in a to-do list format"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="shortcut icon" href="./images/mountain-icon.png" type="image/x-icon"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This will be a project to list user input as tasks in a to-do list format" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/mountain-icon.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous" defer></script>
     <script src="./js/script.js" defer></script>
     <title>Mountain Of Work</title>
@@ -21,7 +21,6 @@
       <main id="main">
         <div id="inbox">
           <h3>Inbox:</h3>
-
           <div class="select">
             <select name="todos" class="filter_todo">
               <option value="all">All</option>
@@ -38,28 +37,23 @@
         </div>
 
         <div id="button">
-          <!-- Trigger/Open The Modal -->
           <button id="add-button" class="myBtn">
-
             <i class="fas fa-plus" id="plus-icon"></i>
           </button>
 
-          <!-- The Modal -->
           <div id="myModal" class="modal">
-            <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Add Task:</h2>
-
               <form>
                 <!-- <select name="task-type" class="taskType">
                   <option disabled selected>Choose task type</option>
                   <option value="business">Completed</option>
                   <option value="personal">Uncompleted</option>
                 </select> -->
-                <input type="text" placeholder="Task name" class="todo_input"/>
-                <input type="date" placeholder="Due date" class="date_input"/>
-                <input type="time" placeholder="Due time" class="time_input"/>
+                <input type="text" placeholder="Task name" class="todo_input" />
+                <input type="date" placeholder="Due date" class="date_input" />
+                <input type="time" placeholder="Due time" class="time_input" />
                 <button class="todo_button" type="submit">Submit</button>
               </form>
             </div>

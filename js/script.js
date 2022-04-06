@@ -10,7 +10,7 @@ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 //variables
 let modal = document.getElementById("myModal");
 let btn = document.querySelector(".myBtn");
-let span = document.getElementsByClassName("close")[0];
+let span = document.querySelector(".close")[0];
 
 //functions
 //display modal function

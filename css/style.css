@@ -91,7 +91,6 @@ main {
   content: "\25bc";
   position: absolute;
   color: #04adbf;
-  top: 7px;
   right: 6px;
   pointer-events: none;
 }
