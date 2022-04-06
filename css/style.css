@@ -50,10 +50,44 @@ main {
     padding-right: 1rem;
 }
 
-#inbox{
+#inbox {
     color: white;
     padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* STYLING DROPDOWN */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    /* background-color: transparent; */
+    border-bottom: 1px solid #000000;
+        width: 7rem;
+    cursor: pointer;
+    padding: 0.7rem;
+}
+.select {
+    position: relative;
+    overflow: hidden;
+}
+.select::after {
+    content: "\25bc";
+    position: absolute;
+    color: #04ADBF;
+    top: 7px;
+    right: 6px;
+    pointer-events: none;
+}
+.select:hover::after {
+   color: #0B2A36;
 }
 
 .todo{
@@ -71,6 +105,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -140,12 +175,12 @@ footer {
 
 
 /* STYLYING INPUT ELEMENT AND TH EBUTTON */
-form{
+/* form{
     display: flex;
     min-height: 15vh;
     justify-content: center;
     align-items: center;    
-}
+} */
 form input, form button{
     padding: 0.4rem;
     border: none;
@@ -161,36 +196,6 @@ form button{
 form button:hover{
     background: #c065c0;
     color: white;
-}
-/* STYLING DROPDOWN */
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    border: none;
-}
-.select{
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-select{
-    color: #c065c0;
-    width: 8rem;
-    cursor: pointer;
-    padding: 0.7rem;
-}
-.select::after{
-    content: "\25bc";
-    position: absolute;
-    color: #c065c0;
-    top: 7px;
-    right: 6px;
-    pointer-events: none;
-}
-.select:hover::after{
-   color: #583429;
 }
 
 /* STYLING CONTAINER WHERE THE TASKS ARE SHOWN */

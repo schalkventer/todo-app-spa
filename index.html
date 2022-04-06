@@ -32,6 +32,14 @@
       <main id="main">
         <div id="inbox">
           <h3>Inbox:</h3>
+
+          <div class="select">
+            <select name="todos" class="filter_todo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
         </div>
 
         <div id="main-body">
@@ -43,7 +51,7 @@
         <div id="button">
           <!-- Trigger/Open The Modal -->
           <button id="add-button" class="myBtn">
-            <img src="./images/plus-icon.png" alt="add icon" id="plus-icon" />
+            <img src="./images/plus-icon.png" alt="add icon" id="plus-icon"/>
           </button>
 
           <!-- The Modal -->
@@ -55,16 +63,17 @@
 
               <form>
                 <input type="text" placeholder="Enter The Work" class="todo_input"/>
+                <!-- <input type="date"> -->
                 <button class="todo_button" type="submit">
                   <i class="fas fa-plus"></i>
                 </button>
-                <div class="select">
+                <!-- <div class="select">
                   <select name="todos" class="filter_todo">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="uncompleted">Uncompleted</option>
                   </select>
-                </div>
+                </div> -->
               </form>
             </div>
           </div>
