@@ -3,17 +3,18 @@
   margin: 0%;
 }
 
-@font-face {
-  font-family: Roboto-Light;
-  src: url("../resources/Roboto-Light.ttf");
-  font-display: swap;
-}
-
+/*general styling*/
 body {
   background-color: #afcdcc;
   color: black;
   font-size: 1rem;
   font-family: Roboto-Light;
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../resources/Roboto-Light.ttf");
+  font-display: swap;
 }
 
 #app {
@@ -35,6 +36,7 @@ h3 {
   padding-bottom: 10px;
 }
 
+/*general header styling*/
 header {
   background-image: url(../images/mountain-background.jpg);
   background-repeat: no-repeat;
@@ -46,12 +48,14 @@ header {
   padding-right: 1rem;
 }
 
+/*general main body styling*/
 main {
   background-color: #f2ad85;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+/*inbox styling*/
 #inbox {
   color: white;
   padding-top: 10px;
@@ -63,7 +67,7 @@ main {
   align-items: center;
 }
 
-/* STYLING DROPDOWN */
+/*dropdown styling*/
 #inbox select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -107,96 +111,7 @@ main {
   margin-bottom: 10px;
 }
 
-#button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#add-button {
-  border: 1px solid transparent;
-  background-color: #5eb5ce;
-  border-radius: 50%;
-  width: 65px;
-  height: 65px;
-  color: white;
-  font-size: 40px;
-  transition: all 0.3s ease;
-}
-
-#add-button:hover {
-  background-color: white;
-  color: #5eb5ce;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.modal-content {
-  background-color: #5eb5ce;
-  margin: auto;
-  padding: 20px;
-  max-width: 540px;
-}
-
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(196, 191, 191);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* STYLYING INPUT ELEMENT AND TH EBUTTON */
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-form input,
-form select {
-  padding: 0.4rem;
-  border: none;
-  font-size: 1.2rem;
-  background: transparent;
-  max-width: 500px;
-}
-
-form button {
-  color: #c065c0;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100px;
-  padding: 0.4rem;
-  font-size: 1.2rem;
-  border: none;
-}
-
-form button:hover {
-  background: #c065c0;
-  color: white;
-}
-
-/* STYLING CONTAINER WHERE THE TASKS ARE SHOWN */
+/*task container styling*/
 .todo_container {
   display: flex;
   flex-direction: row;
@@ -228,10 +143,10 @@ form button:hover {
   flex: 1;
 }
 
-/* STYLING THE BUTTONS ON THE TASKS  */
+/*task container button styling*/
 .complete_btn,
-.delete_btn,
-.edit_btn {
+.edit_btn,
+.delete_btn {
   padding: 0.5rem;
   background: #f2ad85;
   color: white;
@@ -241,18 +156,9 @@ form button:hover {
   font-size: 1rem;
 }
 
-.delete_btn {
-    background: #ff3700; 
-}
-
-.delete_btn:active {
-  background: #b65337;
-}
-
 .complete_btn {
   background: rgb(67, 179, 67);
 }
-
 .complete_btn:active {
   background: green;
 }
@@ -260,30 +166,127 @@ form button:hover {
 .edit_btn {
   background: #04adbf;
 }
-
 .edit_btn:active {
   background: #0b2a36;
 }
 
-.fa-trash,
+.delete_btn {
+  background: #ff3700;
+}
+.delete_btn:active {
+  background: #b65337;
+}
+
 .fa-check,
-.fa-pen {
+.fa-pen .fa-trash {
   pointer-events: none;
 }
 
-/* STYLING TASK THAT IS COMPLETED */
+/*completed tasks*/
 .completedItem {
   text-decoration: line-through;
   opacity: 70%;
   transform: scale(95%);
 }
 
-/* DELETING THE TASKS */
+/*task deletion*/
 .fall {
   transform: translateX(3rem) scale(0.9);
   opacity: 0;
 }
 
+/*Add button styling*/
+#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#add-button {
+  border: 1px solid transparent;
+  background-color: #5eb5ce;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  color: white;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: white;
+  color: #5eb5ce;
+}
+
+/*modal styling*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  background-color: #5eb5ce;
+  margin: auto;
+  padding: 20px;
+  max-width: 540px;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(184, 179, 179);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*form styling*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+form input,
+form select {
+  padding: 0.4rem;
+  border: none;
+  font-size: 1.2rem;
+  background: transparent;
+  max-width: 500px;
+}
+
+form button {
+  color: #c065c0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100px;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+form button:hover {
+  background: #c065c0;
+  color: white;
+}
+
+/*general footer styling*/
 footer {
   background-image: url(../images/mountain-background.jpg);
   background-repeat: no-repeat;
