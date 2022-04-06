@@ -41,7 +41,7 @@ header {
   background-image: url(../images/mountain-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #04adbf;
+  background-color: #f2ad85;
   color: white;
   height: 200px;
   padding-left: 1rem;
@@ -50,7 +50,7 @@ header {
 
 /*general main body styling*/
 main {
-  background-color: #f2ad85;
+  background-color: #f28f6b;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -75,7 +75,7 @@ main {
   outline: none;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #5eb5ce;
+  border-bottom: 1px solid #011126;
   width: 7.6rem;
   cursor: pointer;
   padding-bottom: 0.3rem;
@@ -101,7 +101,7 @@ main {
 }
 
 .todo {
-  border-bottom: 1px solid #5eb5ce;
+  border-bottom: 1px solid #011126;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -112,22 +112,6 @@ main {
 }
 
 /*task container styling*/
-.todo_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.todo_list {
-  min-width: 100%;
-  list-style: none;
-}
-
-.todo_container ul {
-  padding: 0%;
-}
-
 .todo {
   margin: 5px auto;
   background: transparent;
@@ -139,6 +123,22 @@ main {
   transition: all 0.5s ease;
 }
 
+.todo_list {
+  min-width: 100%;
+  list-style: none;
+}
+
+.todo_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo_container ul {
+  padding: 0%;
+}
+
 .todo li {
   flex: 1;
 }
@@ -148,7 +148,7 @@ main {
 .edit_btn,
 .delete_btn {
   padding: 0.5rem;
-  background: #f2ad85;
+  background-color: #f2ad85;
   color: white;
   border: none;
   margin-left: 0.2rem;
@@ -157,7 +157,7 @@ main {
 }
 
 .complete_btn {
-  background: rgb(67, 179, 67);
+  background-color: rgb(67, 179, 67);
 }
 .complete_btn:active {
   background: green;
@@ -178,7 +178,8 @@ main {
 }
 
 .fa-check,
-.fa-pen .fa-trash {
+.fa-pen,
+.fa-trash {
   pointer-events: none;
 }
 
@@ -206,7 +207,7 @@ main {
 
 #add-button {
   border: 1px solid transparent;
-  background-color: #5eb5ce;
+  background-color: #04adbf;
   border-radius: 50%;
   width: 65px;
   height: 65px;
@@ -217,7 +218,7 @@ main {
 
 #add-button:hover {
   background-color: white;
-  color: #5eb5ce;
+  color: #04adbf;
 }
 
 /*modal styling*/
@@ -234,7 +235,7 @@ main {
 }
 
 .modal-content {
-  background-color: #5eb5ce;
+  background-color: #F2AD85;
   margin: auto;
   padding: 20px;
   max-width: 540px;
@@ -271,8 +272,8 @@ form select {
 }
 
 form button {
-  color: #c065c0;
-  background: white;
+  background-color: white;
+  color: #04adbf;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100px;
@@ -282,7 +283,7 @@ form button {
 }
 
 form button:hover {
-  background: #c065c0;
+  background: #04adbf;
   color: white;
 }
 
@@ -290,8 +291,8 @@ form button:hover {
 footer {
   background-image: url(../images/mountain-background.jpg);
   background-repeat: no-repeat;
-  background-position: top;
-  background-color: #04adbf;
+  background-position: bottom;
+  background-color: #011126;
   color: white;
   height: 50px;
   text-transform: uppercase;
