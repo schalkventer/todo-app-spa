@@ -72,9 +72,8 @@ main {
     border-bottom: 1px solid #5EB5CE;
     width: 7.6rem;
     cursor: pointer;
-    padding: 0.3rem;
+    padding-bottom: 0.3rem;
     font-size: 1rem;
-    color: white;
 }
 #inbox .select {
     position: relative;
@@ -126,19 +125,6 @@ main {
     background-color: white;
     color: #5EB5CE;
 }
-
-footer {
-    background-image: url(../images/mountain-background.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: #04ADBF;
-    color: white;
-    height: 50px;
-    text-transform: uppercase;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
 
 .modal {
     display: none;
@@ -273,4 +259,16 @@ form button:hover{
 .fall{
     transform: translateX(3rem) scale(0.9);
     opacity: 0;
+}
+
+footer {
+    background-image: url(../images/mountain-background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #04ADBF;
+    color: white;
+    height: 50px;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
