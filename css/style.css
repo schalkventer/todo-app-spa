@@ -225,8 +225,7 @@ ul {
 }
 
 /* STYLING THE BUTTONS ON THE TASKS  */
-.complete_btn, 
-.delete_btn{
+.complete_btn, .delete_btn, .edit_btn {
     padding: 0.5rem;
     background: #ff3700;
     color: white;
@@ -235,20 +234,25 @@ ul {
     cursor: pointer;
     font-size: 1rem;
 }
-
-.complete_btn{
-    background: rgb(67, 179, 67);
-}
-.complete_btn:active{
-    background: green;
-}
-
 .delete_btn:active{
     background: #b65337;
 }
 
-.fa-trash,
-.fa-check{
+.complete_btn {
+    background: rgb(67, 179, 67);
+}
+.complete_btn:active {
+    background: green;
+}
+
+.edit_btn {
+    background: #04ADBF;
+}
+.edit_btn:active {
+    background: #0B2A36;
+}
+
+.fa-trash, .fa-check{
     pointer-events: none;
 }
 

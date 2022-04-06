@@ -56,11 +56,19 @@ function addTodo(event) {
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add('complete_btn')
     todoDiv.appendChild(completedButton);
+
+    //edit BUTTON
+    const editButton = document.createElement('button');
+    editButton.innerHTML = '<i class="fas fa-pen"></i>';
+    editButton.classList.add('edit_btn')
+    todoDiv.appendChild(editButton);
+    
     //delete BUTTON
     const deleteButton = document.createElement('button');
     deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     deleteButton.classList.add('delete_btn')
     todoDiv.appendChild(deleteButton);
+
     //Append to Actual LIST
     todoList.appendChild(todoDiv);
     //Clear todo input VALUE
@@ -84,7 +92,13 @@ function deleteCheck(e) {
         const todo = item.parentElement;
         todo.classList.toggle("completedItem")
     }
+    //EDIT ITEM
+    if (item.classList[0] === "edit_btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle("completedItem")
+    }
 }
+
 //FILTERING THE TASKS ACCORDING THE OPTION
 function filterTodo(e) {
     const todos = todoList.childNodes;
