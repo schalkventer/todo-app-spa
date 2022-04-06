@@ -13,11 +13,13 @@
   </head>
   <body>
     <div id="app">
+      <!-- header -->
       <header id="header">
         <h1>Your Tasks</h1>
         <div id="date"></div>
       </header>
 
+      <!-- main -->
       <main id="main">
         <div id="inbox">
           <h3>Inbox:</h3>
@@ -30,27 +32,34 @@
           </div>
         </div>
 
+        <!-- todo container -->
         <div id="main-body">
           <div class="todo_container">
             <ul class="todo_list"></ul>
           </div>
         </div>
 
+        <!-- add item button -->
         <div id="button">
           <button id="add-button" class="myBtn">
             <i class="fas fa-plus" id="plus-icon"></i>
           </button>
 
+          <!-- modal -->
           <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>Add Task:</h2>
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add Task:</h2>
+              </div>
+              <div class="modal-content">
+
+              <!-- form and inputs -->
               <form>
-                <!-- <select name="task-type" class="taskType">
+                <select name="task-type" class="taskType">
                   <option disabled selected>Choose task type</option>
                   <option value="business">Completed</option>
                   <option value="personal">Uncompleted</option>
-                </select> -->
+                </select>
                 <input type="text" placeholder="Task name" class="todo_input" />
                 <input type="date" placeholder="Due date" class="date_input" />
                 <input type="time" placeholder="Due time" class="time_input" />
@@ -61,6 +70,7 @@
         </div>
       </main>
 
+      <!-- footer -->
       <footer id="footer">
         <h3>Completed</h3>
       </footer>

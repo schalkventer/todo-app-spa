@@ -3,18 +3,18 @@
   margin: 0%;
 }
 
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../resources/Roboto-Light.ttf");
+  font-display: swap;
+}
+
 /*general styling*/
 body {
   background-color: #afcdcc;
   color: black;
   font-size: 1rem;
   font-family: Roboto-Light;
-}
-
-@font-face {
-  font-family: Roboto-Light;
-  src: url("../resources/Roboto-Light.ttf");
-  font-display: swap;
 }
 
 #app {
@@ -24,9 +24,7 @@ body {
   box-shadow: 4px 4px 40px #5eb5ce;
 }
 
-#app h1,
-h2,
-h3 {
+#app h1, h2, h3 {
   margin: 0%;
 }
 
@@ -99,39 +97,23 @@ main {
   color: #0b2a36;
 }
 
-.todo {
-  border-bottom: 1px solid #011126;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-
 /*task container styling*/
 .todo {
-  margin: 5px auto;
   background: transparent;
-  display: flex;
-  font-size: 1.2rem;
+  border-bottom: 1px solid #011126;
+  margin: 5px auto;
   padding: 0.3rem;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
+  font-size: 1.2rem;
   transition: all 0.5s ease;
 }
 
 .todo_list {
   min-width: 100%;
   list-style: none;
-}
-
-.todo_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .todo_container ul {
@@ -143,9 +125,7 @@ main {
 }
 
 /*task container button styling*/
-.complete_btn,
-.edit_btn,
-.delete_btn {
+.complete_btn, .edit_btn, .delete_btn {
   padding: 0.5rem;
   background-color: #f2ad85;
   color: white;
@@ -176,9 +156,7 @@ main {
   background: #b65337;
 }
 
-.fa-check,
-.fa-pen,
-.fa-trash {
+.fa-check, .fa-pen, .fa-trash {
   pointer-events: none;
 }
 
@@ -240,6 +218,19 @@ main {
   max-width: 540px;
 }
 
+.modal-header {
+  background-color: #011126;
+  margin: auto;
+  padding: 10px;
+  max-width: 540px;
+}
+
+.modal-header h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .close {
   color: white;
   float: right;
@@ -247,8 +238,7 @@ main {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: rgb(184, 179, 179);
   text-decoration: none;
   cursor: pointer;
@@ -261,18 +251,18 @@ form {
   justify-content: start;
 }
 
-form input,
-form select {
+form input, form select {
   padding: 0.4rem;
   border: none;
+  border-bottom: 1px solid #011126;
   font-size: 1.2rem;
   background: transparent;
   max-width: 500px;
 }
 
 form button {
-  background-color: white;
-  color: #04adbf;
+  background: #04adbf;
+  color: white;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100px;
@@ -282,8 +272,9 @@ form button {
 }
 
 form button:hover {
-  background: #04adbf;
-  color: white;
+
+  background-color: white;
+  color: #04adbf;  
 }
 
 /*general footer styling*/
