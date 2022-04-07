@@ -11,10 +11,11 @@
 
 /*general styling*/
 body {
-  background-color: #afcdcc;
+  background-color: #ccd8da;
   color: black;
   font-size: 1rem;
   font-family: Roboto-Light;
+  margin-top: 3rem;
 }
 
 #app {
