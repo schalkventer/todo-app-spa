@@ -302,9 +302,8 @@ footer {
   align-items: center;
 }
 
-#personal-count {
-  border: 1px solid whitesmoke;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
+
+::selection {
+  background: #5EC5E4;
+  color: white;
 }
