@@ -51,20 +51,28 @@ header {
   background-color: #f2ad85;
   color: white;
   height: 200px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#left-content {
   padding-left: 1rem;
-  padding-right: 1rem;
+}
+
+#right-content {
+  background-color: rgba(0, 0, 0, 0.247);
 }
 
 /*general main body styling*/
 main {
-  background-color: #f28f6b;
+  background-color: #FBC39B;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 /*inbox styling*/
 #inbox {
-  color: white;
+  /* color: white; */
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -110,7 +118,7 @@ main {
 .todo {
   background: transparent;
   border-bottom: 1px solid #011126;
-  margin: 5px auto;
+  margin: 7px auto;
   padding: 0.3rem;
   display: flex;
   flex-direction: row;
@@ -193,7 +201,7 @@ main {
 
 #add-button {
   border: 1px solid transparent;
-  background-color: #04adbf;
+  background-color: #5EC5E4;
   border-radius: 50%;
   width: 65px;
   height: 65px;
@@ -204,7 +212,7 @@ main {
 
 #add-button:hover {
   background-color: white;
-  color: #04adbf;
+  color: #5EC5E4;
 }
 
 /*modal styling*/
@@ -221,14 +229,14 @@ main {
 }
 
 .modal-content {
-  background-color: #F2AD85;
+  background-color: white;
   margin: auto;
   padding: 20px;
   max-width: 540px;
 }
 
 .modal-header {
-  background-color: #011126;
+  background-color: #010916;
   margin: auto;
   padding: 10px;
   max-width: 540px;
