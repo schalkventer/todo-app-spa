@@ -54,15 +54,13 @@
             <div class="modal-content">
               <!-- form and inputs -->
               <form>
-                <select name="task-type" class="taskType">
+                <!-- <select name="task-type" class="taskType">
                   <option disabled selected>Choose task type</option>
                   <option value="business">Business</option>
                   <option value="personal">Personal</option>
-                </select>
-                <input type="text" placeholder="Task name" class="todo_input" required/>
-                <!-- <input type="date" placeholder="Due date" class="date_input" />
-                <input type="time" placeholder="Due time" class="time_input" /> -->
-                <input type="datetime-local" class="due_input" />
+                </select> -->
+                <input type="text" placeholder="Task name" class="todo_input" maxlength="15" required/>
+                <input type="datetime-local" class="due_input" required/>
                 <button class="todo_button" type="submit">Submit</button>
               </form>
             </div>

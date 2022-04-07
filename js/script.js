@@ -32,12 +32,7 @@ window.onclick = function (event) {
 /*----------Form----------*/
 //variables
 const todoInput = document.querySelector(".todo_input");
-// const dateInput = document.querySelector(".date_input");
-// const timeInput = document.querySelector(".time_input");
-
-
 const dueInput = document.querySelector(".due_input"); 
-
 const todoButton = document.querySelector(".todo_button");
 const todoList = document.querySelector(".todo_list");
 const filterOption = document.querySelector(".filter_todo");
@@ -64,32 +59,14 @@ function addTodo(event) {
     return null;
   }
 
-  // //due date li
-  // const dateTodo = document.createElement("li");
-  // dateTodo.innerText = dateInput.value;
-  // dateTodo.classList.add("todo_item");
-  // todoDiv.appendChild(dateTodo);
-  // if (dateInput.value === "") {
-  //   return null;
-  // }
-
-  // //due time li
-  // const timeTodo = document.createElement("li");
-  // timeTodo.innerText = timeInput.value;
-  // timeTodo.classList.add("todo_item");
-  // todoDiv.appendChild(timeTodo);
-  // if (timeInput.value === "") {
-  //   return null;
-  // }
-
-
-    const dueTodo = document.createElement("li");
-    dueTodo.innerText = dueInput.value;
-    dueTodo.classList.add("todo_item");
-    todoDiv.appendChild(dueTodo);
-    if (dueInput.value === "") {
-      return null;
-    }
+  //due date and time li
+  const dueTodo = document.createElement("li");
+  dueTodo.innerText = dueInput.value;
+  dueTodo.classList.add("todo_item");
+  todoDiv.appendChild(dueTodo);
+  if (dueInput.value === "") {
+    return null;
+  }
 
   //complete button
   const completedButton = document.createElement("button");
@@ -114,8 +91,7 @@ function addTodo(event) {
 
   //Clear input values
   todoInput.value = "";
-  dateInput.value = "";
-  timeInput.value = "";
+  dueTodo.value = "";
 }
 
 //check, edit and delete function
