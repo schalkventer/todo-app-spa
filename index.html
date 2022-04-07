@@ -59,14 +59,10 @@
                   <option value="business">Business</option>
                   <option value="personal">Personal</option>
                 </select>
-                <input
-                  type="text"
-                  placeholder="Task name"
-                  class="todo_input"
-                  required
-                />
-                <input type="date" placeholder="Due date" class="date_input" />
-                <input type="time" placeholder="Due time" class="time_input" />
+                <input type="text" placeholder="Task name" class="todo_input" required/>
+                <!-- <input type="date" placeholder="Due date" class="date_input" />
+                <input type="time" placeholder="Due time" class="time_input" /> -->
+                <input type="datetime-local" class="due_input" />
                 <button class="todo_button" type="submit">Submit</button>
               </form>
             </div>
