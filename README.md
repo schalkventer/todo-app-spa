@@ -32,6 +32,7 @@ This is an application that can be used to write down tasks and display them in 
 - Add tasks completed counter
 - Add in modal (complete)
 
+## Links
 
-### Website link
+### Deploy link
 https://oliververmeulen.github.io/todo-app-spa/
