@@ -31,7 +31,7 @@ window.onclick = function (event) {
 
 /*----------Form----------*/
 //variables
-const todoInput = document.querySelector(".todo_input");
+const taskInput = document.querySelector(".task_input");
 const dueInput = document.querySelector(".due_input"); 
 const todoButton = document.querySelector(".todo_button");
 const todoList = document.querySelector(".todo_list");
@@ -51,11 +51,11 @@ function addTodo(event) {
   todoDiv.classList.add("todo");
 
   //task name li
-  const newTodo = document.createElement("li");
-  newTodo.innerText = todoInput.value;
-  newTodo.classList.add("todo_item");
-  todoDiv.appendChild(newTodo);
-  if (todoInput.value === "") {
+  const taskTodo = document.createElement("li");
+  taskTodo.innerText = taskInput.value;
+  taskTodo.classList.add("todo_item");
+  todoDiv.appendChild(taskTodo);
+  if (taskInput.value === "") {
     return null;
   }
 
@@ -90,8 +90,8 @@ function addTodo(event) {
   todoList.appendChild(todoDiv);
 
   //Clear input values
-  todoInput.value = "";
-  dueTodo.value = "";
+  taskInput.value = "";
+  dueInput.value = "";
 }
 
 //check, edit and delete function

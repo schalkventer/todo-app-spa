@@ -62,10 +62,6 @@ main {
   padding-right: 1rem;
 }
 
-/* #main-body {
-  background-color: white;
-} */
-
 /*inbox styling*/
 #inbox {
   /* color: whitesmoke; */
@@ -186,7 +182,7 @@ main {
   opacity: 0;
 }
 
-/*Add button styling*/
+/*add button styling*/
 #button {
   display: flex;
   flex-direction: row;
