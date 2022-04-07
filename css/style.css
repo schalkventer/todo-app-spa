@@ -97,19 +97,19 @@ main {
 #inbox .select::after {
   content: "\25bc";
   position: absolute;
-  color: #04adbf;
+  color: #5EC5E4;
   right: 6px;
   pointer-events: none;
 }
 
 #inbox .select:hover::after {
-  color: #0b2a36;
+  color: #010916;
 }
 
 /*task container styling*/
 .todo {
   background: transparent;
-  border-bottom: 1px solid #011126;
+  border-bottom: 1px solid #010916;
   margin: 7px auto;
   padding: 0.3rem;
   display: flex;
@@ -261,29 +261,29 @@ form {
 }
 
 form input, form select {
-  padding: 0.4rem;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
   border: none;
-  border-bottom: 1px solid #011126;
+  border-bottom: 1px solid #010916;
   font-size: 1.2rem;
   background: transparent;
   max-width: 500px;
 }
 
 form button {
-  background: #04adbf;
+  background: #5EC5E4;
   color: whitesmoke;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100px;
+  width: 80px;
   padding: 0.4rem;
   font-size: 1.2rem;
   border: none;
 }
 
 form button:hover {
-
   background-color: whitesmoke;
-  color: #04adbf;  
+  color: #5EC5E4;  
 }
 
 /*general footer styling*/
@@ -291,7 +291,7 @@ footer {
   background-image: url(../images/mountain-background.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-color: #011126;
+  background-color: #010916;
   color: whitesmoke;
   height: 50px;
   text-transform: uppercase;

@@ -1,10 +1,9 @@
 /*----------Header date----------*/
 n = new Date();
-y = n.getFullYear();
-m = n.getMonth() + 1;
 d = n.getDate();
+m = n.getMonth() + 1;
+y = n.getFullYear();
 document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
-
 
 /*----------Modal----------*/
 //variables
@@ -29,7 +28,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
 
 /*----------Form----------*/
 //variables
