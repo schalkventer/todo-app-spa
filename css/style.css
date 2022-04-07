@@ -49,18 +49,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f2ad85;
-  color: white;
+  color: whitesmoke;
   height: 200px;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-#left-content {
   padding-left: 1rem;
-}
-
-#right-content {
-  background-color: rgba(0, 0, 0, 0.247);
+  padding-right: 1rem;
 }
 
 /*general main body styling*/
@@ -72,7 +64,7 @@ main {
 
 /*inbox styling*/
 #inbox {
-  /* color: white; */
+  /* color: whitesmoke; */
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -145,7 +137,7 @@ main {
 .complete_btn, .edit_btn, .delete_btn {
   padding: 0.5rem;
   background-color: #f2ad85;
-  color: white;
+  color: whitesmoke;
   border: none;
   margin-left: 0.2rem;
   cursor: pointer;
@@ -205,13 +197,13 @@ main {
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  color: white;
+  color: whitesmoke;
   font-size: 40px;
   transition: all 0.3s ease;
 }
 
 #add-button:hover {
-  background-color: white;
+  background-color: whitesmoke;
   color: #5EC5E4;
 }
 
@@ -229,7 +221,7 @@ main {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: whitesmoke;
   margin: auto;
   padding: 20px;
   max-width: 540px;
@@ -243,13 +235,13 @@ main {
 }
 
 .modal-header h2 {
-  color: white;
+  color: whitesmoke;
   text-align: center;
   text-transform: uppercase;
 }
 
 .close {
-  color: white;
+  color: whitesmoke;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -279,7 +271,7 @@ form input, form select {
 
 form button {
   background: #04adbf;
-  color: white;
+  color: whitesmoke;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100px;
@@ -290,7 +282,7 @@ form button {
 
 form button:hover {
 
-  background-color: white;
+  background-color: whitesmoke;
   color: #04adbf;  
 }
 
@@ -300,9 +292,19 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #011126;
-  color: white;
+  color: whitesmoke;
   height: 50px;
   text-transform: uppercase;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#personal-count {
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
 }
