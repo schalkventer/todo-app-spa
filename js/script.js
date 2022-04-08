@@ -32,7 +32,7 @@ window.onclick = function (event) {
 /*----------Form----------*/
 //variables
 const taskInput = document.querySelector(".task_input");
-const dueInput = document.querySelector(".due_input"); 
+const dueInput = document.querySelector(".due_input");
 const todoButton = document.querySelector(".todo_button");
 const todoList = document.querySelector(".todo_list");
 const filterOption = document.querySelector(".filter_todo");
@@ -92,7 +92,10 @@ function addTodo(event) {
   //Clear input values
   taskInput.value = "";
   dueInput.value = "";
+
+  // console.log(todoDiv)
 }
+console.log(document.getElementsByClassName("todo"))
 
 //check, edit and delete function
 function deleteCheck(e) {
@@ -145,3 +148,5 @@ function filterTodo(e) {
     }
   }
 }
+
+// console.log(todoList.childNodes);
