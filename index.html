@@ -4,21 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This will be a project to list user input as tasks in a todo list format"
-    />
+    <meta name="description" content="This will be a project to list user input as tasks in a todo list format" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./images/mountain-icon.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://kit.fontawesome.com/e4ad388285.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <link rel="shortcut icon" href="./images/mountain-icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous" defer></script>
     <script src="./js/script.js" defer></script>
     <title>Mountain Of Stuff</title>
   </head>
@@ -66,9 +55,7 @@
             <div class="modal-content">
               <!-- form and inputs -->
               <form>
-                <label for="taskType" class="form-label"
-                  >Task type:</label
-                >
+                <label for="taskType" class="form-label">Task type:</label>
                 <select name="task-type" class="taskType">
                   <option class="type-select" disabled selected>
                     Choose task type
@@ -77,26 +64,11 @@
                   <option class="type-select" value="personal">Personal</option>
                 </select>
 
-                <label for="taskInput" class="form-label"
-                  >Task name:</label
-                >
-                <input
-                  type="text"
-                  placeholder="Enter task name"
-                  class="taskInput"
-                  maxlength="15"
-                  required
-                />
+                <label for="taskInput" class="form-label">Task name:</label>
+                <input type="text" placeholder="Enter task name" class="taskInput" maxlength="15" required />
 
-                <label for="dueInput" class="form-label"
-                  >Date and time:</label
-                >
-                <input
-                  type="datetime-local"
-                  class="dueInput"
-                  max="2030-12-31T23:59"
-                  required
-                />
+                <label for="dueInput" class="form-label">Date and time:</label>
+                <input type="datetime-local" class="dueInput" max="2030-12-31T23:59" required />
                 <button class="todoBtn" type="submit">Submit</button>
               </form>
             </div>
