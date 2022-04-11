@@ -79,9 +79,9 @@ main {
 
 /*dropdown styling*/
 #inbox select {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none;*/
   outline: none;
   border: none;
   background-color: transparent;
@@ -92,21 +92,8 @@ main {
   font-size: 1rem;
 }
 
-#inbox .select {
-  position: relative;
-  overflow: hidden;
-}
-
-#inbox .select::after {
-  content: "\25bc";
-  position: absolute;
-  color: #5ec5e4;
-  right: 6px;
-  pointer-events: none;
-}
-
-#inbox .select:hover::after {
-  color: #010916;
+#inbox .type-select {
+  background-color: #FBC097;
 }
 
 /*task container styling*/
@@ -114,7 +101,7 @@ main {
   background: transparent;
   border-bottom: 1px solid #010916;
   margin: 7px auto;
-  padding: 0.3rem;
+  padding: 0.9rem 0.3rem 0.3rem 0.3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -225,7 +212,6 @@ main {
   top: 0;
   width: 100%;
   height: 100%;
-
   margin-top: 2.5rem;
 }
 
@@ -233,7 +219,7 @@ main {
   background-color: whitesmoke;
   margin: auto;
   /* padding: 20px; */
-  padding: 2.5rem 1.3rem 1.3rem 1.3rem;
+  padding: 1.3rem 1.3rem 1.3rem 1.3rem;
   max-width: 540px;
 }
 
@@ -280,7 +266,7 @@ form {
 form input,
 form select {
   padding: 0rem 0.3rem 0.3rem 0.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   border: none;
   outline: none;
   border-bottom: 1px solid #010916;
@@ -298,7 +284,7 @@ form label {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.73rem;
 }
 
 form button {
@@ -307,7 +293,6 @@ form button {
   cursor: pointer;
   transition: all 0.3s ease;
   width: 80px;
-  margin-top: 1.5rem;
   padding: 0.4rem;
   font-size: 1.2rem;
   border: none;
