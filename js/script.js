@@ -149,4 +149,3 @@ function filterTodo(e) {
   }
 }
 
-// console.log(todoList.childNodes);
