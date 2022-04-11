@@ -25,8 +25,8 @@ This is an application that can be used to write down tasks and display them in 
 
 ## Backlog
 - Add more inputs to form (complete)
-- Edit tasks
-- Sort tasks by due time
+- Edit tasks (complete)
+- Sort tasks alphabetically
 - Save tasks in their expected states and order even after the browser has been closed
 - Add local storage
 - Add tasks completed counter
