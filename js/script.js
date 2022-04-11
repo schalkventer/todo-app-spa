@@ -93,10 +93,7 @@ function addTodo(event) {
   //Clear input values
   taskInput.value = "";
   dueInput.value = "";
-
-  // console.log(todoDiv)
 }
-console.log(document.getElementsByClassName("todo"));
 
 //check, edit and delete function
 function deleteCheck(e) {
@@ -116,11 +113,15 @@ function deleteCheck(e) {
     const todo = item.parentElement;
     todo.classList.toggle("completedItem");
   }
-
+  
   //edit existing item
   if (item.classList[0] === "editBtn") {
     const todo = item.parentElement;
-    todo.classList.toggle("completedItem");
+    todo.classList.add("fall");
+    todo.addEventListener("transitionend", function () {
+      todo.remove();
+    });
+    modal.style.display = "block";
   }
 }
 
@@ -145,6 +146,9 @@ function filterTodo(e) {
         } else {
           todos[i].style.display = "none";
         }
+        break;
+      case "alphabetize":
+        todos[i].style.display = "flex";
         break;
     }
   }
