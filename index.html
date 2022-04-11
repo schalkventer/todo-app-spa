@@ -53,17 +53,17 @@
             <div class="modal-content">
               <!-- form and inputs -->
               <form>
-                <label for="taskType" class="form-label">Choose a task type:</label>
+                <label for="taskType" class="form-label">Choose task type:</label>
                 <select name="task-type" class="taskType">
-                  <option disabled selected>Task type</option>
-                  <option value="business">Business</option>
-                  <option value="personal">Personal</option>
+                  <option class="type-select" disabled selected>Task type</option>
+                  <option class="type-select" value="business">Business</option>
+                  <option class="type-select" value="personal">Personal</option>
                 </select>
 
-                <label for="taskInput" class="form-label">Choose a task name:</label>
+                <label for="taskInput" class="form-label">Enter task name:</label>
                 <input type="text" placeholder="Task name" class="taskInput" maxlength="15" required />
 
-                <label for="dueInput" class="form-label">Choose a due date and time:</label>
+                <label for="dueInput" class="form-label">Enter due date and time:</label>
                 <input type="datetime-local" class="dueInput" max="2030-12-31T23:59" required />
                 <button class="todoBtn" type="submit">Submit</button>
               </form>

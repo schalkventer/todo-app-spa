@@ -264,15 +264,24 @@ form input, form select {
   padding: 0rem 0.3rem 0.3rem 0.3rem;
   margin-bottom: 1rem;
   border: none;
+  outline: none;
   border-bottom: 1px solid #010916;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background: transparent;
   max-width: 500px;
 }
 
+/* .type-select {
+  background-color: #04adbf;
+} */
+
 form label {
-  font-size: 1.2rem;
+  font-size: 1.17rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 }
+
 form button {
   background: #5EC5E4;
   color: whitesmoke;
@@ -282,6 +291,7 @@ form button {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: none;
+  margin: 0 auto;
 }
 
 form button:hover {
