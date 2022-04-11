@@ -120,12 +120,12 @@ main {
   transition: all 0.5s ease;
 }
 
-.todo_list {
+.todoList {
   min-width: 100%;
   list-style: none;
 }
 
-.todo_container ul {
+.todo-container ul {
   padding: 0%;
 }
 
@@ -134,7 +134,7 @@ main {
 }
 
 /*task container button styling*/
-.complete_btn, .edit_btn, .delete_btn {
+.completeBtn, .editBtn, .deleteBtn {
   padding: 0.5rem;
   background-color: #f2ad85;
   color: whitesmoke;
@@ -144,24 +144,24 @@ main {
   font-size: 1rem;
 }
 
-.complete_btn {
+.completeBtn {
   background-color: rgb(67, 179, 67);
 }
-.complete_btn:active {
+.completeBtn:active {
   background: green;
 }
 
-.edit_btn {
+.editBtn {
   background: #04adbf;
 }
-.edit_btn:active {
+.editBtn:active {
   background: #0b2a36;
 }
 
-.delete_btn {
+.deleteBtn {
   background: #ff3700;
 }
-.delete_btn:active {
+.deleteBtn:active {
   background: #b65337;
 }
 
@@ -191,7 +191,7 @@ main {
   padding-bottom: 10px;
 }
 
-#add-button {
+#add-btn {
   border: 1px solid transparent;
   background-color: #5EC5E4;
   border-radius: 50%;
@@ -202,7 +202,7 @@ main {
   transition: all 0.3s ease;
 }
 
-#add-button:hover {
+#add-btn:hover {
   background-color: whitesmoke;
   color: #5EC5E4;
 }

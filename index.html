@@ -24,7 +24,7 @@
         <div id="inbox">
           <h3>Inbox:</h3>
           <div class="select">
-            <select name="todos" class="filter_todo">
+            <select name="todos" class="filterTodo">
               <option value="all">All</option>
               <option value="completed">Completed</option>
               <option value="uncompleted">Uncompleted</option>
@@ -34,14 +34,14 @@
 
         <!-- todo container -->
         <div id="main-body">
-          <div class="todo_container">
-            <ul class="todo_list"></ul>
+          <div class="todo-container">
+            <ul class="todoList"></ul>
           </div>
         </div>
 
         <!-- add item button -->
         <div id="button">
-          <button id="add-button" class="myBtn">
+          <button id="add-btn" class="myBtn">
             <i class="fas fa-plus" id="plus-icon"></i>
           </button>
 
@@ -54,14 +54,14 @@
             <div class="modal-content">
               <!-- form and inputs -->
               <form>
-                <!-- <select name="task-type" class="taskType">
-                  <option disabled selected>Choose task type</option>
+                <select name="task-type" class="taskType">
+                  <option disabled selected>Task type</option>
                   <option value="business">Business</option>
                   <option value="personal">Personal</option>
-                </select> -->
-                <input type="text" placeholder="Task name" class="task_input" maxlength="15" required/>
-                <input type="datetime-local" class="due_input" required/>
-                <button class="todo_button" type="submit">Submit</button>
+                </select>
+                <input type="text" placeholder="Task name" class="taskInput" maxlength="15" required />
+                <input type="datetime-local" class="dueInput" required />
+                <button class="todoBtn" type="submit">Submit</button>
               </form>
             </div>
           </div>
