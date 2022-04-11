@@ -79,9 +79,6 @@ main {
 
 /*dropdown styling*/
 #inbox select {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;*/
   outline: none;
   border: none;
   background-color: transparent;
