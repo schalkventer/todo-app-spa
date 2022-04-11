@@ -33,7 +33,9 @@ body {
   box-shadow: 4px 4px 40px #5eb5ce;
 }
 
-#app h1, h2, h3 {
+#app h1,
+h2,
+h3 {
   margin: 0%;
 }
 
@@ -53,11 +55,12 @@ header {
   height: 200px;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.7rem;
 }
 
 /*general main body styling*/
 main {
-  background-color: #FBC39B;
+  background-color: #81C3D9;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -97,7 +100,7 @@ main {
 #inbox .select::after {
   content: "\25bc";
   position: absolute;
-  color: #5EC5E4;
+  color: #5ec5e4;
   right: 6px;
   pointer-events: none;
 }
@@ -115,7 +118,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   font-size: 1.2rem;
   transition: all 0.5s ease;
 }
@@ -134,7 +137,9 @@ main {
 }
 
 /*task container button styling*/
-.completeBtn, .editBtn, .deleteBtn {
+.completeBtn,
+.editBtn,
+.deleteBtn {
   padding: 0.5rem;
   background-color: #f2ad85;
   color: whitesmoke;
@@ -142,30 +147,33 @@ main {
   margin-left: 0.2rem;
   cursor: pointer;
   font-size: 1rem;
+  border-radius: 50%;
 }
 
 .completeBtn {
-  background-color: rgb(67, 179, 67);
+  background-color: #FBC097;
 }
 .completeBtn:active {
-  background: green;
+  background: #F28F6B;
 }
 
 .editBtn {
-  background: #04adbf;
+  background: #F28F6B;
 }
 .editBtn:active {
-  background: #0b2a36;
+  background: #D96D55;
 }
 
 .deleteBtn {
-  background: #ff3700;
+  background: #D96D55;
 }
 .deleteBtn:active {
-  background: #b65337;
+  background: #FBC097;
 }
 
-.fa-check, .fa-pen, .fa-trash {
+.fa-check,
+.fa-pen,
+.fa-trash {
   pointer-events: none;
 }
 
@@ -193,7 +201,7 @@ main {
 
 #add-btn {
   border: 1px solid transparent;
-  background-color: #5EC5E4;
+  background-color: #81C3D9;
   border-radius: 50%;
   width: 65px;
   height: 65px;
@@ -204,7 +212,7 @@ main {
 
 #add-btn:hover {
   background-color: whitesmoke;
-  color: #5EC5E4;
+  color: #81C3D9;
 }
 
 /*modal styling*/
@@ -223,14 +231,15 @@ main {
 .modal-content {
   background-color: whitesmoke;
   margin: auto;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 2.5rem 1.3rem 1.3rem 1.3rem;
   max-width: 540px;
 }
 
 .modal-header {
   background-color: #010916;
   margin: auto;
-  padding: 10px;
+  padding: 15px;
   max-width: 540px;
 }
 
@@ -247,7 +256,8 @@ main {
   font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: rgb(184, 179, 179);
   text-decoration: none;
   cursor: pointer;
@@ -260,9 +270,10 @@ form {
   justify-content: start;
 }
 
-form input, form select {
+form input,
+form select {
   padding: 0rem 0.3rem 0.3rem 0.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border: none;
   outline: none;
   border-bottom: 1px solid #010916;
@@ -280,14 +291,16 @@ form label {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 form button {
-  background: #5EC5E4;
+  background: #81C3D9;
   color: whitesmoke;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 80px;
+  margin-top: 1.5rem;
   padding: 0.4rem;
   font-size: 1.2rem;
   border: none;
@@ -296,7 +309,7 @@ form button {
 
 form button:hover {
   background-color: whitesmoke;
-  color: #5EC5E4;  
+  color: #81C3D9;
 }
 
 /*general footer styling*/
@@ -315,8 +328,7 @@ footer {
   align-items: center;
 }
 
-
 ::selection {
-  background: #5EC5E4;
-  color: white;
+  background: #5ec5e4;
+  color: whitesmoke;
 }

@@ -70,7 +70,8 @@ function addTodo(event) {
 
   //complete button
   const completedButton = document.createElement("button");
-  completedButton.innerHTML = '<i class="fas fa-check" alt="complete icon"></i>';
+  completedButton.innerHTML =
+    '<i class="fas fa-check" alt="complete icon"></i>';
   completedButton.classList.add("completeBtn");
   todoDiv.appendChild(completedButton);
 
@@ -95,7 +96,7 @@ function addTodo(event) {
 
   // console.log(todoDiv)
 }
-console.log(document.getElementsByClassName("todo"))
+console.log(document.getElementsByClassName("todo"));
 
 //check, edit and delete function
 function deleteCheck(e) {
