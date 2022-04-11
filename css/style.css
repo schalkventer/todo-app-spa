@@ -11,12 +11,27 @@
 
 /*general styling*/
 body {
-  background-color: #ccd8da;
+
   color: black;
   font-size: 1rem;
   font-family: Roboto-Light;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  background: linear-gradient(-45deg,#1B4D67,#04adbf,#f28f6b,#d96d55);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -30,12 +45,10 @@ body {
   margin: 0 auto;
   max-width: 640px;
   width: 100%;
-  box-shadow: 4px 4px 40px #5eb5ce;
+  box-shadow: 4px 4px 40px #011126;
 }
 
-#app h1,
-h2,
-h3 {
+#app h1, h2, h3 {
   margin: 0%;
 }
 
@@ -60,7 +73,7 @@ header {
 
 /*general main body styling*/
 main {
-  background-color: #81C3D9;
+  background-color: #81c3d9;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -90,7 +103,7 @@ main {
 }
 
 #inbox .type-select {
-  background-color: #FBC097;
+  background-color: #fbc097;
 }
 
 /*task container styling*/
@@ -121,9 +134,7 @@ main {
 }
 
 /*task container button styling*/
-.completeBtn,
-.editBtn,
-.deleteBtn {
+.completeBtn, .editBtn, .deleteBtn {
   padding: 0.5rem;
   background-color: #f2ad85;
   color: whitesmoke;
@@ -135,24 +146,24 @@ main {
 }
 
 .completeBtn {
-  background-color: #FBC097;
+  background-color: #fbc097;
 }
 .completeBtn:active {
-  background: #F28F6B;
+  background: #f28f6b;
 }
 
 .editBtn {
-  background: #F28F6B;
+  background: #f28f6b;
 }
 .editBtn:active {
-  background: #D96D55;
+  background: #d96d55;
 }
 
 .deleteBtn {
-  background: #D96D55;
+  background: #d96d55;
 }
 .deleteBtn:active {
-  background: #FBC097;
+  background: #fbc097;
 }
 
 .fa-check,
@@ -185,7 +196,7 @@ main {
 
 #add-btn {
   border: 1px solid transparent;
-  background-color: #81C3D9;
+  background-color: #81c3d9;
   border-radius: 50%;
   width: 65px;
   height: 65px;
@@ -196,7 +207,7 @@ main {
 
 #add-btn:hover {
   background-color: whitesmoke;
-  color: #81C3D9;
+  color: #81c3d9;
 }
 
 /*modal styling*/
@@ -228,17 +239,8 @@ main {
 .modal-content {
   background-color: whitesmoke;
   margin: auto;
-  /* padding: 20px; */
   padding: 1.3rem 1.3rem 1.3rem 1.3rem;
   max-width: 540px;
-}
-
-
-
-@media screen and (max-width: 1200px) {
-  .modal {
-    margin-top: 0%;
-  }
 }
 
 .close {
@@ -255,6 +257,12 @@ main {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+  .modal {
+    margin-top: 0%;
+  }
+}
+
 /*form styling*/
 form {
   display: flex;
@@ -262,8 +270,7 @@ form {
   justify-content: start;
 }
 
-form input,
-form select {
+form input, form select {
   padding: 0rem 0.3rem 0.3rem 0.3rem;
   margin-bottom: 1.2rem;
   border: none;
@@ -274,10 +281,6 @@ form select {
   max-width: 500px;
 }
 
-/* .type-select {
-  background-color: #04adbf;
-} */
-
 form label {
   font-size: 1.17rem;
   text-transform: uppercase;
@@ -287,7 +290,7 @@ form label {
 }
 
 form button {
-  background: #81C3D9;
+  background: #81c3d9;
   color: whitesmoke;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -300,7 +303,7 @@ form button {
 
 form button:hover {
   background-color: whitesmoke;
-  color: #81C3D9;
+  color: #81c3d9;
 }
 
 /*general footer styling*/
