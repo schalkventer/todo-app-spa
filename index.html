@@ -21,7 +21,7 @@
 
       <!-- main -->
       <main id="main">
-        <div id="inbox">
+        <inbox id="inbox">
           <h3>Inbox:</h3>
           <div class="select">
             <select name="todos" class="filterTodo">
@@ -30,23 +30,22 @@
               <option value="uncompleted">Uncompleted</option>
             </select>
           </div>
-        </div>
+        </inbox>
 
         <!-- todo container -->
-        <div id="main-body">
+        <container id="main-body">
           <div class="todo-container">
             <ul class="todoList"></ul>
           </div>
-        </div>
+        </container>
 
         <!-- add item button -->
-        <div id="button">
+        <form-modal id="button">
           <button id="add-btn" class="myBtn">
             <i class="fas fa-plus" id="plus-icon" alt="Add icon"></i>
           </button>
-
           <!-- modal -->
-          <div id="myModal" class="modal">
+          <modal id="myModal" class="modal">
             <div class="modal-header">
               <span class="close">&times;</span>
               <h2>Add Task:</h2>
@@ -54,21 +53,23 @@
             <div class="modal-content">
               <!-- form and inputs -->
               <form>
-                <label for="taskType">Choose a task type:</label>
+                <label for="taskType" class="form-label">Choose a task type:</label>
                 <select name="task-type" class="taskType">
                   <option disabled selected>Task type</option>
                   <option value="business">Business</option>
                   <option value="personal">Personal</option>
                 </select>
-                <label for="taskInput">Choose a task name:</label>
+                
+                <label for="taskInput" class="form-label">Choose a task name:</label>
                 <input type="text" placeholder="Task name" class="taskInput" maxlength="15" required />
-                <label for="dueInput">Choose a due date and time:</label>
+
+                <label for="dueInput" class="form-label">Choose a due date and time:</label>
                 <input type="datetime-local" class="dueInput" max="2030-12-31T23:59" required />
                 <button class="todoBtn" type="submit">Submit</button>
               </form>
             </div>
-          </div>
-        </div>
+          </modal>
+        </form-modal>
       </main>
 
       <!-- footer -->
