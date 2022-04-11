@@ -42,7 +42,7 @@
         <!-- add item button -->
         <div id="button">
           <button id="add-btn" class="myBtn">
-            <i class="fas fa-plus" id="plus-icon"></i>
+            <i class="fas fa-plus" id="plus-icon" alt="Add icon"></i>
           </button>
 
           <!-- modal -->
@@ -54,13 +54,16 @@
             <div class="modal-content">
               <!-- form and inputs -->
               <form>
+                <label for="taskType">Choose a task type:</label>
                 <select name="task-type" class="taskType">
                   <option disabled selected>Task type</option>
                   <option value="business">Business</option>
                   <option value="personal">Personal</option>
                 </select>
+                <label for="taskInput">Choose a task name:</label>
                 <input type="text" placeholder="Task name" class="taskInput" maxlength="15" required />
-                <input type="datetime-local" class="dueInput" required />
+                <label for="dueInput">Choose a due date and time:</label>
+                <input type="datetime-local" class="dueInput" max="2030-12-31T23:59" required />
                 <button class="todoBtn" type="submit">Submit</button>
               </form>
             </div>

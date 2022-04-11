@@ -70,19 +70,19 @@ function addTodo(event) {
 
   //complete button
   const completedButton = document.createElement("button");
-  completedButton.innerHTML = '<i class="fas fa-check"></i>';
+  completedButton.innerHTML = '<i class="fas fa-check" alt="complete icon"></i>';
   completedButton.classList.add("completeBtn");
   todoDiv.appendChild(completedButton);
 
   //edit button
   const editButton = document.createElement("button");
-  editButton.innerHTML = '<i class="fas fa-pen"></i>';
+  editButton.innerHTML = '<i class="fas fa-pen" alt="edit icon"></i>';
   editButton.classList.add("editBtn");
   todoDiv.appendChild(editButton);
 
   //delete button
   const deleteButton = document.createElement("button");
-  deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+  deleteButton.innerHTML = '<i class="fas fa-trash" alt="delete icon"></i>';
   deleteButton.classList.add("deleteBtn");
   todoDiv.appendChild(deleteButton);
 
