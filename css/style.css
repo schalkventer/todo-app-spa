@@ -212,14 +212,6 @@ main {
   margin-top: 2.5rem;
 }
 
-.modal-content {
-  background-color: whitesmoke;
-  margin: auto;
-  /* padding: 20px; */
-  padding: 1.3rem 1.3rem 1.3rem 1.3rem;
-  max-width: 540px;
-}
-
 .modal-header {
   background-color: #010916;
   margin: auto;
@@ -232,6 +224,16 @@ main {
   text-align: center;
   text-transform: uppercase;
 }
+
+.modal-content {
+  background-color: whitesmoke;
+  margin: auto;
+  /* padding: 20px; */
+  padding: 1.3rem 1.3rem 1.3rem 1.3rem;
+  max-width: 540px;
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .modal {
