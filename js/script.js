@@ -113,7 +113,7 @@ function deleteCheck(e) {
     const todo = item.parentElement;
     todo.classList.toggle("completedItem");
   }
-  
+
   //edit existing item
   if (item.classList[0] === "editBtn") {
     const todo = item.parentElement;
@@ -153,5 +153,3 @@ function filterTodo(e) {
     }
   }
 }
-
-// console.log(todoList.childNodes);
