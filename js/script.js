@@ -1,26 +1,37 @@
 /*----------Header date----------*/
-n = new Date();
-d = n.getDate();
-m = n.getMonth() + 1;
-y = n.getFullYear();
-document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+const CURRENT_DATE = new Date();
+const DAY = currentDate.getDate();
+const MONTH_AS_NUMBER = currentDate.getMonth() + 1;
+const YEAR = currentDate.getFullYear();
 
-/*----------Modal----------*/
-//variables
-let modal = document.getElementById("myModal");
-let btn = document.querySelector(".myBtn");
-let span = document.getElementsByClassName("close")[0];
+const PADDED_DAY = DAY.toString().padStart(2, '0')
+const PADDED_MONTH = MONTH_AS_NUMBER.toString().padStart(2, '0')
+const DATE_STRING = `${DAY.padStart(2, '0')}/${MONTH_AS_NUMBER}/${YEAR}`
 
-//functions
-//display modal function
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+const elements = {
+  date: document.querySelector('#date'),
+  modal: document.querySelector("#myModal"),
+  button: document.querySelector(".myBtn"),
+  span: document.querySelector(".close");
+}
 
-//close modal function
-span.onclick = function () {
-  modal.style.display = "none";
-};
+/*
+ * Sets initial date on load
+ */
+
+elements.date.innerHTML = DATE_STRING
+
+elements.button.addEventListener('click', () => {
+  elements.modal.classList.add('block');
+})
+
+elements.span.addEventListener('click', () => {
+  elements.modal.classList.add('block');
+})
+
+body.addEventListener('click', () => {
+  elements.modal.classList.add('block');
+})
 
 //window close modal function
 window.onclick = function (event) {
