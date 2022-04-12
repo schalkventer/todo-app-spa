@@ -202,6 +202,7 @@ main {
   color: whitesmoke;
   font-size: 40px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 #add-btn:hover {
