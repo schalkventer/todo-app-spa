@@ -226,7 +226,7 @@ main {
 .modal-header {
   background-color: #010916;
   margin: auto;
-  padding: 15px;
+  padding: 10px;
   max-width: 540px;
 }
 
@@ -239,7 +239,7 @@ main {
 .modal-content {
   background-color: whitesmoke;
   margin: auto;
-  padding: 1.3rem 1.3rem 1.3rem 1.3rem;
+  padding: 10px;
   max-width: 540px;
 }
 
