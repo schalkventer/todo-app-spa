@@ -11,13 +11,12 @@
 
 /*general styling*/
 body {
-
   color: black;
   font-size: 1rem;
   font-family: Roboto-Light;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  background: linear-gradient(-45deg,#1B4D67,#04adbf,#f28f6b,#d96d55);
+  background: linear-gradient(-45deg, #1b4d67, #04adbf, #f28f6b, #d96d55);
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
 }
@@ -31,13 +30,6 @@ body {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  body {
-    margin-top: 0%;
-    margin-bottom: 0%;
   }
 }
 
@@ -56,6 +48,13 @@ body {
   margin: 0%;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
 }
 
 /*general header styling*/
@@ -134,7 +133,9 @@ main {
 }
 
 /*task container button styling*/
-.completeBtn, .editBtn, .deleteBtn {
+.completeBtn,
+.editBtn,
+.deleteBtn {
   padding: 0.5rem;
   background-color: #f2ad85;
   color: whitesmoke;
@@ -166,9 +167,7 @@ main {
   background: #fbc097;
 }
 
-.fa-check,
-.fa-pen,
-.fa-trash {
+.fa-check, .fa-pen, .fa-trash {
   pointer-events: none;
 }
 
